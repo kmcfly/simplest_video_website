@@ -1,17 +1,17 @@
 /**
- * ×î¼òµ¥µÄÊÓÆµÍøÕ¾
+ * ï¿½ï¿½òµ¥µï¿½ï¿½ï¿½Æµï¿½ï¿½Õ¾
  * Simplest Video Website
  *
- * À×Ïöæè Lei Xiaohua
+ * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Lei Xiaohua
  * 
  * leixiaohua1020@126.com
- * ÖÐ¹ú´«Ã½´óÑ§/Êý×ÖµçÊÓ¼¼Êõ
+ * ï¿½Ð¹ï¿½Ã½ï¿½ï¿½Ñ§/ï¿½ï¿½ï¿½Öµï¿½ï¿½Ó¼ï¿½ï¿½ï¿½
  * Communication University of China / Digital TV Technology
  * http://blog.csdn.net/leixiaohua1020
  *
- * ±¾³ÌÐòÊÇÒ»¸ö×î¼òµ¥µÄÊÓÆµÍøÕ¾ÊÓÆµ¡£ËüÖ§³Ö
- * 1.Ö±²¥
- * 2.µã²¥
+ * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½òµ¥µï¿½ï¿½ï¿½Æµï¿½ï¿½Õ¾ï¿½ï¿½Æµï¿½ï¿½ï¿½ï¿½Ö§ï¿½ï¿½
+ * 1.Ö±ï¿½ï¿½
+ * 2.ï¿½ã²¥
  * This software is the simplest video website.
  * It support: 
  * 1. live broadcast 
@@ -31,9 +31,9 @@ import org.springframework.orm.hibernate3.support.HibernateDaoSupport;
 
 
 /**
- * @author À×Ïöæè
- * HibernateTemplateÌá¹©·Ç³£¶àµÄ³£ÓÃ·½·¨À´Íê³É»ù±¾µÄ²Ù×÷£¬±ÈÈçÍ¨³£µÄÔö¼Ó¡¢É¾³ý¡¢ÐÞ¸Ä¡¢²éÑ¯µÈ²Ù×÷£¬
- * Spring 2.0¸üÔö¼Ó¶ÔÃüÃûSQL²éÑ¯µÄÖ§³Ö£¬Ò²Ôö¼Ó¶Ô·ÖÒ³µÄÖ§³Ö¡£´ó²¿·ÖÇé¿öÏÂ£¬¾Í¿ÉÍê³É´ó¶àÊýDAO¶ÔÏóµÄCRUD²Ù×÷¡£
+ * @author ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ * HibernateTemplateï¿½á¹©ï¿½Ç³ï¿½ï¿½ï¿½Ä³ï¿½ï¿½Ã·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½É»ï¿½Ä²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¨ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ó¡ï¿½É¾ï¿½ï¿½ï¿½Þ¸Ä¡ï¿½ï¿½ï¿½Ñ¯ï¿½È²ï¿½ï¿½ï¿½ï¿½ï¿½
+ * Spring 2.0ï¿½ï¿½ï¿½ï¿½ï¿½Ó¶ï¿½ï¿½ï¿½ï¿½ï¿½SQLï¿½ï¿½Ñ¯ï¿½ï¿½Ö§ï¿½Ö£ï¿½Ò²ï¿½ï¿½ï¿½Ó¶Ô·ï¿½Ò³ï¿½ï¿½Ö§ï¿½Ö¡ï¿½ï¿½ó²¿·ï¿½ï¿½ï¿½ï¿½ï¿½Â£ï¿½ï¿½Í¿ï¿½ï¿½ï¿½É´ï¿½ï¿½ï¿½ï¿½DAOï¿½ï¿½ï¿½ï¿½ï¿½CRUDï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
  */
 public class BaseDaoImpl extends HibernateDaoSupport implements BaseDao{
 
@@ -55,8 +55,8 @@ public class BaseDaoImpl extends HibernateDaoSupport implements BaseDao{
 	@Override
 	public Object ReadSingle(final String targetName,final String propertyName, final Object value) {
 		// TODO Auto-generated method stub
-		return (Object) getHibernateTemplate().execute(new HibernateCallback<Object>() {
-			/*doInHibernate()¡£sessionµÄ´´½¨ºÍÏú»Ù£¬Ò»ÇÐ¶¼ÔÚ³ÌÐòÄÚ²¿Íê³É¡£*/
+		return (Object) getHibernateTemplate().execute(new HibernateCallback() {
+			/*doInHibernate()ï¿½ï¿½sessionï¿½Ä´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ù£ï¿½Ò»ï¿½Ð¶ï¿½ï¿½Ú³ï¿½ï¿½ï¿½ï¿½Ú²ï¿½ï¿½ï¿½É¡ï¿½*/
 			public Object doInHibernate(Session session)
 					throws HibernateException, SQLException {
 				String hql = "from "+targetName+" as "+targetName+" where "+targetName+"." + propertyName + "=:value";
@@ -80,8 +80,8 @@ public class BaseDaoImpl extends HibernateDaoSupport implements BaseDao{
 	public List<Object> ReadByProperty(final String targetName, final String propertyName,
 			final Object value) {
 		// TODO Auto-generated method stub
-		return (List<Object>) getHibernateTemplate().execute(new HibernateCallback<Object>() {
-			/*doInHibernate()¡£sessionµÄ´´½¨ºÍÏú»Ù£¬Ò»ÇÐ¶¼ÔÚ³ÌÐòÄÚ²¿Íê³É¡£*/
+		return (List<Object>) getHibernateTemplate().execute(new HibernateCallback() {
+			/*doInHibernate()ï¿½ï¿½sessionï¿½Ä´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ù£ï¿½Ò»ï¿½Ð¶ï¿½ï¿½Ú³ï¿½ï¿½ï¿½ï¿½Ú²ï¿½ï¿½ï¿½É¡ï¿½*/
 			public Object doInHibernate(Session session)
 					throws HibernateException, SQLException {
 				String hql = "from "+targetName+" as "+targetName+" where "+targetName+"." + propertyName + "=:value";
@@ -99,20 +99,20 @@ public class BaseDaoImpl extends HibernateDaoSupport implements BaseDao{
 		// TODO Auto-generated method stub
 		return null;
 	}
-//ÕâÀïÔÚHibernate2.0Ö®Ç°°æ±¾list.get(0)·µ»ØµÄÊÇIntegerÀàÐÍ. 
-//µ«ÊÇÔÚHibernate3.0ÒÔºó°æ±¾list.get(0)·µ»ØµÄÊÇLongÀàÐÍ. 
-//ËùÒÔÔÚÕâÀï²»¿ÉÒÔÓÉLongÐÍÇ¿×ª³ÉIntegerÀàÐÍ. 
-//IntegerÊôÓÚ²»¿É¸ü¸ÄÀàÐÍ£¬¶øÇÒLongºÍIntegerÃ»ÓÐÈÎºÎ¼Ì³Ð¹ØÏµ£¬µ±È»²»ÄÜÕâÑù×ª»»¡£
+//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Hibernate2.0Ö®Ç°ï¿½æ±¾list.get(0)ï¿½ï¿½ï¿½Øµï¿½ï¿½ï¿½Integerï¿½ï¿½ï¿½ï¿½. 
+//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Hibernate3.0ï¿½Ôºï¿½æ±¾list.get(0)ï¿½ï¿½ï¿½Øµï¿½ï¿½ï¿½Longï¿½ï¿½ï¿½ï¿½. 
+//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï²»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Longï¿½ï¿½Ç¿×ªï¿½ï¿½Integerï¿½ï¿½ï¿½ï¿½. 
+//Integerï¿½ï¿½ï¿½Ú²ï¿½ï¿½É¸ï¿½ï¿½ï¿½ï¿½ï¿½Í£ï¿½ï¿½ï¿½ï¿½ï¿½Longï¿½ï¿½IntegerÃ»ï¿½ï¿½ï¿½ÎºÎ¼Ì³Ð¹ï¿½Ïµï¿½ï¿½ï¿½ï¿½È»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×ªï¿½ï¿½ï¿½ï¿½
 	@Override
 	public Integer ReadCount(final String targetName) {
 		// TODO Auto-generated method stub
-		return (Integer) getHibernateTemplate().execute(new HibernateCallback<Object>() {
-			/*doInHibernate()¡£sessionµÄ´´½¨ºÍÏú»Ù£¬Ò»ÇÐ¶¼ÔÚ³ÌÐòÄÚ²¿Íê³É¡£*/
+		return (Integer) getHibernateTemplate().execute(new HibernateCallback() {
+			/*doInHibernate()ï¿½ï¿½sessionï¿½Ä´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ù£ï¿½Ò»ï¿½Ð¶ï¿½ï¿½Ú³ï¿½ï¿½ï¿½ï¿½Ú²ï¿½ï¿½ï¿½É¡ï¿½*/
 			public Object doInHibernate(Session session)
 					throws HibernateException, SQLException {
 				String hql = "select count(*) from "+targetName;
 				//System.out.println(hql);
-				//×¢:java.lang.NumberÊÇInteger,LongµÄ¸¸Àà.
+				//×¢:java.lang.Numberï¿½ï¿½Integer,Longï¿½Ä¸ï¿½ï¿½ï¿½.
 				return ((Number)session.createQuery(hql).iterate().next()).intValue();
 			}
 		});
@@ -121,8 +121,8 @@ public class BaseDaoImpl extends HibernateDaoSupport implements BaseDao{
 	@Override
 	public Integer ReadCountByProperty(final String targetName,final String propertyName, final Object value) {
 		// TODO Auto-generated method stub
-		return (Integer) getHibernateTemplate().execute(new HibernateCallback<Object>() {
-			/*doInHibernate()¡£sessionµÄ´´½¨ºÍÏú»Ù£¬Ò»ÇÐ¶¼ÔÚ³ÌÐòÄÚ²¿Íê³É¡£*/
+		return (Integer) getHibernateTemplate().execute(new HibernateCallback() {
+			/*doInHibernate()ï¿½ï¿½sessionï¿½Ä´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ù£ï¿½Ò»ï¿½Ð¶ï¿½ï¿½Ú³ï¿½ï¿½ï¿½ï¿½Ú²ï¿½ï¿½ï¿½É¡ï¿½*/
 			public Object doInHibernate(Session session)
 					throws HibernateException, SQLException {
 				String hql = "select count(*) from "+targetName+" as "+targetName+" where "+targetName+"." + propertyName + "=:value";
@@ -141,13 +141,13 @@ public class BaseDaoImpl extends HibernateDaoSupport implements BaseDao{
 	public List<Object> ReadLimitedByOrder(final String targetName,
 			final String propertyName, final int num, final String order) {
 		// TODO Auto-generated method stub
-		return (List<Object>) getHibernateTemplate().execute(new HibernateCallback<Object>() {
-			/*doInHibernate()¡£sessionµÄ´´½¨ºÍÏú»Ù£¬Ò»ÇÐ¶¼ÔÚ³ÌÐòÄÚ²¿Íê³É¡£*/
+		return (List<Object>) getHibernateTemplate().execute(new HibernateCallback() {
+			/*doInHibernate()ï¿½ï¿½sessionï¿½Ä´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ù£ï¿½Ò»ï¿½Ð¶ï¿½ï¿½Ú³ï¿½ï¿½ï¿½ï¿½Ú²ï¿½ï¿½ï¿½É¡ï¿½*/
 			public Object doInHibernate(Session session) throws HibernateException, SQLException {
 				String hql ="from "+targetName+" as "+targetName+ " order by "+targetName+"." + propertyName+ " " + order;
 				Query query = session.createQuery(hql);
 				query.setMaxResults(num);
-				//µ±·µ»ØµÄÊý¾Ý²»ÊÇÒ»ÌõµÄÊ±ºò£¬²»ÓÃuniqueresult()£¬¶øÓÃlist()
+				//ï¿½ï¿½ï¿½ï¿½ï¿½Øµï¿½ï¿½ï¿½Ý²ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ò£¬²ï¿½ï¿½ï¿½uniqueresult()ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½list()
 				return query.list();
 			}
 		});
@@ -158,8 +158,8 @@ public class BaseDaoImpl extends HibernateDaoSupport implements BaseDao{
 	public List<Object> ReadByPropertyAndLimitedByOrder(final String targetName, final String readpropertyName,
 			final Object readvalue,final String orderpropertyName, final int num, final String order) {
 		// TODO Auto-generated method stub
-		return (List<Object>) getHibernateTemplate().execute(new HibernateCallback<Object>() {
-			/*doInHibernate()¡£sessionµÄ´´½¨ºÍÏú»Ù£¬Ò»ÇÐ¶¼ÔÚ³ÌÐòÄÚ²¿Íê³É¡£*/
+		return (List<Object>) getHibernateTemplate().execute(new HibernateCallback() {
+			/*doInHibernate()ï¿½ï¿½sessionï¿½Ä´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ù£ï¿½Ò»ï¿½Ð¶ï¿½ï¿½Ú³ï¿½ï¿½ï¿½ï¿½Ú²ï¿½ï¿½ï¿½É¡ï¿½*/
 			public Object doInHibernate(Session session)
 					throws HibernateException, SQLException {
 				String hql = "from "+targetName+" as "+targetName+" where "+targetName+"." + readpropertyName + "=:value"+

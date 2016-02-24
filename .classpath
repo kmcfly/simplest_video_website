@@ -5,5 +5,35 @@
 	<classpathentry kind="con" path="melibrary.com.genuitec.eclipse.j2eedt.core.MYECLIPSE_JAVAEE_6_CONTAINER"/>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
+	<classpathentry kind="lib" path="E:/private/video_website/trunk/lib/antlr-2.7.6.jar"/>
+	<classpathentry kind="lib" path="E:/private/video_website/trunk/lib/aspectjrt.jar"/>
+	<classpathentry kind="lib" path="E:/private/video_website/trunk/lib/aspectjweaver.jar"/>
+	<classpathentry kind="lib" path="E:/private/video_website/trunk/lib/cglib-nodep-2.1_3.jar"/>
+	<classpathentry kind="lib" path="E:/private/video_website/trunk/lib/common-annotations.jar"/>
+	<classpathentry kind="lib" path="E:/private/video_website/trunk/lib/commons-collections-3.1.jar"/>
+	<classpathentry kind="lib" path="E:/private/video_website/trunk/lib/commons-dbcp.jar"/>
+	<classpathentry kind="lib" path="E:/private/video_website/trunk/lib/commons-fileupload-1.2.1.jar"/>
+	<classpathentry kind="lib" path="E:/private/video_website/trunk/lib/commons-io-1.3.2.jar"/>
+	<classpathentry kind="lib" path="E:/private/video_website/trunk/lib/commons-logging-1.1.1.jar"/>
+	<classpathentry kind="lib" path="E:/private/video_website/trunk/lib/commons-pool.jar"/>
+	<classpathentry kind="lib" path="E:/private/video_website/trunk/lib/dom4j-1.6.1.jar"/>
+	<classpathentry kind="lib" path="E:/private/video_website/trunk/lib/ejb3-persistence.jar"/>
+	<classpathentry kind="lib" path="E:/private/video_website/trunk/lib/freemarker-2.3.13.jar"/>
+	<classpathentry kind="lib" path="E:/private/video_website/trunk/lib/hibernate3.jar"/>
+	<classpathentry kind="lib" path="E:/private/video_website/trunk/lib/hibernate-annotations.jar"/>
+	<classpathentry kind="lib" path="E:/private/video_website/trunk/lib/hibernate-commons-annotations.jar"/>
+	<classpathentry kind="lib" path="E:/private/video_website/trunk/lib/javassist-3.9.0.GA.jar"/>
+	<classpathentry kind="lib" path="E:/private/video_website/trunk/lib/jta-1.1.jar"/>
+	<classpathentry kind="lib" path="E:/private/video_website/trunk/lib/junit-4.5.jar"/>
+	<classpathentry kind="lib" path="E:/private/video_website/trunk/lib/mysql-connector-java-3.1.13-bin.jar"/>
+	<classpathentry kind="lib" path="E:/private/video_website/trunk/lib/ognl-2.6.11.jar"/>
+	<classpathentry kind="lib" path="E:/private/video_website/trunk/lib/slf4j-api-1.5.8.jar"/>
+	<classpathentry kind="lib" path="E:/private/video_website/trunk/lib/slf4j-nop-1.5.8.jar"/>
+	<classpathentry kind="lib" path="E:/private/video_website/trunk/lib/spring.jar"/>
+	<classpathentry kind="lib" path="E:/private/video_website/trunk/lib/struts2-core-2.1.6.jar"/>
+	<classpathentry kind="lib" path="E:/private/video_website/trunk/lib/struts2-spring-plugin-2.1.6.jar"/>
+	<classpathentry kind="lib" path="E:/private/video_website/trunk/lib/xwork-2.1.2.jar"/>
+	<classpathentry kind="lib" path="D:/Program Files/Apache Software Foundation/Tomcat 7.0/lib/servlet-api.jar"/>
+	<classpathentry kind="lib" path="E:/private/video_website/trunk/lib/jna.jar"/>
 	<classpathentry kind="output" path="WebRoot/WEB-INF/classes"/>
 </classpath>
